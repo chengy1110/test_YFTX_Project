@@ -2,7 +2,7 @@ import os
 import sys
 from selenium import webdriver
 print(sys.path)
-sys.path.append(".")
+sys.path.append("/pages/loginPage")
 from pages.loginPage import LoginPage
 from time import sleep
 import ddt
