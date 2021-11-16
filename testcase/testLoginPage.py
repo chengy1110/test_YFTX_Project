@@ -1,8 +1,7 @@
 import os
 import sys
 from selenium import webdriver
-print(sys.path)
-sys.path.append(".")
+
 from pages.loginPage import LoginPage
 from time import sleep
 import ddt

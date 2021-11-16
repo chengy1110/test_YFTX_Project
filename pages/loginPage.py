@@ -1,6 +1,5 @@
 from selenium.webdriver.common.by import By
-import sys
-sys.path
+
 from pages.basePages import basePage
 
 

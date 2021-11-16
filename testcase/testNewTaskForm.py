@@ -66,6 +66,7 @@ class TestNewTaskForm(unittest.TestCase):
         newTaskForm_page.input_descreb(describe_text8)
         #上传附件
         newTaskForm_page.file_upload(path_text9)
+        sleep(3)
         # 提交
         newTaskForm_page.click_commite_btn()
 
