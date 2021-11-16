@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>自动化测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2021-11-11 15:57:59</p>
-<p class='attribute'><strong>Duration:</strong> 0:01:13.718124</p>
-<p class='attribute'><strong>Status:</strong> Pass 4</p>
+<p class='attribute'><strong>Start Time:</strong> 2021-11-12 16:52:12</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.152585</p>
+<p class='attribute'><strong>Status:</strong> Error 3</p>
 
 <p class='description'></p>
 </div>
@@ -221,31 +221,51 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='passClass'>
-    <td>testLoginPage.TestLoginPage</td>
-    <td>2</td>
-    <td>2</td>
+<tr class='errorClass'>
+    <td>unittest.loader._FailedTest</td>
+    <td>3</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
+    <td>3</td>
+    <td><a href="javascript:showClassDetail('c1',3)">Detail</a></td>
 </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>testLogin_1</div></td>
+<tr id='ft1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>testLoginPage</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        error</a>
 
-    <div id='div_pt1.1' class="popup_window">
+    <div id='div_ft1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.1: 
+ft1.1: ImportError: Failed to import test module: testLoginPage
+Traceback (most recent call last):
+  File "D:\auto\python3.8.6\lib\unittest\loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "D:\auto\python3.8.6\lib\unittest\loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "D:\apache-tomcat-9.0.41\apache-tomcat-9.0.41\webapps\NEW_jenkins\workspace\pythonProject\pagedemo\testcase\testLoginPage.py", line 6, in &lt;module&gt;
+    from pages.loginPage import LoginPage
+ModuleNotFoundError: No module named 'pages'
+
+ImportError: Failed to import test module: testLoginPage
+Traceback (most recent call last):
+  File "D:\auto\python3.8.6\lib\unittest\loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "D:\auto\python3.8.6\lib\unittest\loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "D:\apache-tomcat-9.0.41\apache-tomcat-9.0.41\webapps\NEW_jenkins\workspace\pythonProject\pagedemo\testcase\testLoginPage.py", line 6, in &lt;module&gt;
+    from pages.loginPage import LoginPage
+ModuleNotFoundError: No module named 'pages'
+
+
 
         </pre>
     </div>
@@ -254,22 +274,42 @@ pt1.1:
     </td>
 </tr>
 
-<tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>testLogin_2</div></td>
+<tr id='ft1.2' class='none'>
+    <td class='errorCase'><div class='testcase'>testNewTaskForm</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        error</a>
 
-    <div id='div_pt1.2' class="popup_window">
+    <div id='div_ft1.2' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.2: 
+ft1.2: ImportError: Failed to import test module: testNewTaskForm
+Traceback (most recent call last):
+  File "D:\auto\python3.8.6\lib\unittest\loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "D:\auto\python3.8.6\lib\unittest\loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "D:\apache-tomcat-9.0.41\apache-tomcat-9.0.41\webapps\NEW_jenkins\workspace\pythonProject\pagedemo\testcase\testNewTaskForm.py", line 9, in &lt;module&gt;
+    from pages.loginPage import LoginPage
+ModuleNotFoundError: No module named 'pages'
+
+ImportError: Failed to import test module: testNewTaskForm
+Traceback (most recent call last):
+  File "D:\auto\python3.8.6\lib\unittest\loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "D:\auto\python3.8.6\lib\unittest\loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "D:\apache-tomcat-9.0.41\apache-tomcat-9.0.41\webapps\NEW_jenkins\workspace\pythonProject\pagedemo\testcase\testNewTaskForm.py", line 9, in &lt;module&gt;
+    from pages.loginPage import LoginPage
+ModuleNotFoundError: No module named 'pages'
+
+
 
         </pre>
     </div>
@@ -278,40 +318,56 @@ pt1.2:
     </td>
 </tr>
 
-<tr class='passClass'>
-    <td>testNewTaskForm.TestNewTaskForm</td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
-</tr>
+<tr id='ft1.3' class='none'>
+    <td class='errorCase'><div class='testcase'>testSearchPage</div></td>
+    <td colspan='5' align='center'>
 
-<tr id='pt2.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>testNewTaskForm</div></td>
-    <td colspan='5' align='center'>pass</td>
-</tr>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
+        error</a>
 
-<tr class='passClass'>
-    <td>testSearchPage.TestSearchPage</td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c3',1)">Detail</a></td>
-</tr>
+    <div id='div_ft1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.3: ImportError: Failed to import test module: testSearchPage
+Traceback (most recent call last):
+  File "D:\auto\python3.8.6\lib\unittest\loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "D:\auto\python3.8.6\lib\unittest\loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "D:\apache-tomcat-9.0.41\apache-tomcat-9.0.41\webapps\NEW_jenkins\workspace\pythonProject\pagedemo\testcase\testSearchPage.py", line 5, in &lt;module&gt;
+    from pages.loginPage import LoginPage
+ModuleNotFoundError: No module named 'pages'
 
-<tr id='pt3.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>testSearch</div></td>
-    <td colspan='5' align='center'>pass</td>
+ImportError: Failed to import test module: testSearchPage
+Traceback (most recent call last):
+  File "D:\auto\python3.8.6\lib\unittest\loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "D:\auto\python3.8.6\lib\unittest\loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "D:\apache-tomcat-9.0.41\apache-tomcat-9.0.41\webapps\NEW_jenkins\workspace\pythonProject\pagedemo\testcase\testSearchPage.py", line 5, in &lt;module&gt;
+    from pages.loginPage import LoginPage
+ModuleNotFoundError: No module named 'pages'
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>4</td>
-    <td>4</td>
+    <td>3</td>
     <td>0</td>
     <td>0</td>
+    <td>3</td>
     <td>&nbsp;</td>
 </tr>
 </table>

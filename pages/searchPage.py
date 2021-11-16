@@ -1,4 +1,6 @@
 from selenium import webdriver
+import sys
+sys.path
 from pages.basePages import basePage
 from selenium.webdriver.common.by import By
 
