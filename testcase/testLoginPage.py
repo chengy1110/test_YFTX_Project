@@ -1,13 +1,13 @@
 import os
 import sys
 from selenium import webdriver
-print(sys.path)
-sys.path.append("..")
-sys.path.append('D:/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/Jenkins/PROJECT/workspace/test_YFTX_project/pages/loginPage.py')
+import unittest
+
+sys.path.append('pages/loginPage')
 from pages.loginPage import LoginPage
 from time import sleep
 import ddt
-import unittest
+
 from pages.excelUtil import ExcelUtil
 
 forword_dirc=os.path.abspath(os.path.join(os.getcwd(), ".."))
