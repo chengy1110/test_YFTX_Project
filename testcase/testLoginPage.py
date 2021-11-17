@@ -1,13 +1,12 @@
 import os
 import sys
 from selenium import webdriver
-import unittest
-
-sys.path.append('../pages')
+print(sys.path)
+sys.path.append("..")
 from pages.loginPage import LoginPage
 from time import sleep
 import ddt
-
+import unittest
 from pages.excelUtil import ExcelUtil
 
 forword_dirc=os.path.abspath(os.path.join(os.getcwd(), ".."))
