@@ -3,7 +3,7 @@ import sys
 from selenium import webdriver
 print(sys.path)
 sys.path.append("..")
-sys.path.append('D:/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/NEW_jenkins/workspace/pythonProject/testpagedemo/pages/loginPage.py')
+sys.path.append('D:/apache-tomcat-9.0.41/apache-tomcat-9.0.41/webapps/Jenkins/PROJECT/workspace/test_YFTX_project/pages/loginPage.py')
 from pages.loginPage import LoginPage
 from time import sleep
 import ddt
