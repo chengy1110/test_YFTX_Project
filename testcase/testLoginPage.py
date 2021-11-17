@@ -3,7 +3,7 @@ import sys
 from selenium import webdriver
 import unittest
 
-sys.path.append('pages')
+sys.path.append('../pages')
 from pages.loginPage import LoginPage
 from time import sleep
 import ddt
