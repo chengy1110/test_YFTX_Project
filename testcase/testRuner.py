@@ -26,6 +26,7 @@ def all_case():
     return testcase
 
 if __name__ =="__main__":
+    unittest.main()
     forword_dirc=os.path.abspath(os.path.join(os.getcwd(), ".."))
     report_dirc = forword_dirc + "\\"+"result\\"
     print(report_dirc)
