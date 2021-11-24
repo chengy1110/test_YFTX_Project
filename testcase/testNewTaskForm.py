@@ -6,6 +6,7 @@ from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
+from common.screenshotPicture import ScreenshotPicture
 from pages.loginPage import LoginPage
 from pages.newTaskForm import NewTaskForm
 
@@ -32,9 +33,10 @@ class TestNewTaskForm(unittest.TestCase):
 
 
     def testNewTaskForm(self,task_text1="新建任务工单测试",task_text2="标签测试",start_date_text3="2021-08-09",end_date_text4="2021-10-09",
-                        tasktime_text5="0.2",taskgrade_text6="2",handler_text7="李子川",describe_text8="测试描述信息",path_text9="D:/auto/AutoIt3_file/new_test.exe"):
+                        tasktime_text5="0.2",taskgrade_text6="2",handler_text7="李子川",describe_text8="测试描述信息",path_text9="D:/auto/AutoIt3_file/new_test.exe",image_path='..//picture//'):
 
         newTaskForm_page = NewTaskForm(self.driver)
+        screenshot_picture = ScreenshotPicture(self.driver)
 
         self.driver.switch_to.frame("google_con_frame")
         #点击新建按钮
@@ -69,6 +71,7 @@ class TestNewTaskForm(unittest.TestCase):
         sleep(3)
         # 提交
         newTaskForm_page.click_commite_btn()
+        screenshot_picture.screenshot_image1(image_path)
 
 
 
