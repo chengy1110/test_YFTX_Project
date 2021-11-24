@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 
 from pages.loginPage import LoginPage
 from pages.newTaskForm import NewTaskForm
-from pages.taskFormList import TaskFormList
+
 
 
 class TestNewTaskForm(unittest.TestCase):
