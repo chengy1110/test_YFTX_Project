@@ -32,7 +32,7 @@ class TestNewTaskForm(unittest.TestCase):
 
 
 
-    def testNewTaskForm(self,task_text1="新建任务工单测试",task_text2="标签测试",start_date_text3="2021-08-09",end_date_text4="2021-10-09",
+    def testNewTaskForm(self,task_text1="任务工单测试test",task_text2="标签测试",start_date_text3="2021-08-09",end_date_text4="2021-10-09",
                         tasktime_text5="0.2",taskgrade_text6="2",handler_text7="李子川",describe_text8="测试描述信息",path_text9="D:/auto/AutoIt3_file/new_test.exe",image_path='..//picture//'):
 
         newTaskForm_page = NewTaskForm(self.driver)
