@@ -71,6 +71,7 @@ class TestNewTaskForm(unittest.TestCase):
         sleep(3)
         # 提交
         newTaskForm_page.click_commite_btn()
+        sleep(3)
         screenshot_picture.screenshot_image1(image_path)
 
 
