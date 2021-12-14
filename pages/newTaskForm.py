@@ -34,7 +34,10 @@ class NewTaskForm(basePage):
     grade_btn = (By.XPATH, '//*[@id="app"]/div/form/div[1]/div[2]/div[5]/div[5]/div/div/div/span/span/i')
     grade_chioce = (By.XPATH, '/html/body/div[6]/div[1]/div[1]/ul/li[1]/span')
     #处理人，选择李子川
-    handler_btn = (By.XPATH, '//*[@id="app"]/div/form/div[1]/div[2]/div[5]/div[6]/div/div/div[1]/span/span/i')
+    '''handler_btn = (By.XPATH, '//*[@id="app"]/div/form/div[1]/div[2]/div[5]/div[6]/div/div/div[1]/span/span/i')
+    handler_chioce = (By.XPATH, '/html/body/div[7]/div[1]/div[1]/ul/li/span')'''
+
+    handler_btn = (By.XPATH, '//*[@id="app"]/div/form/div[1]/div[2]/div[5]/div[6]/div/div[1]/div/span/span/i')
     handler_chioce = (By.XPATH, '/html/body/div[7]/div[1]/div[1]/ul/li/span')
 
     #描述信息
