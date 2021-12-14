@@ -16,7 +16,7 @@ class TestNewTaskForm(unittest.TestCase):
     sys.setrecursionlimit(100000)
     driver=webdriver.Chrome()
 
-    def setUp(self,text1 = 'chengy3',text2 = '1'):
+    def setUp(self,text1 = 'chengy3',text2 = 'qwe123'):
         self.driver.get('http://delivertest.gisquest.com/logout')
         self.driver.maximize_window()
         sleep(2)
